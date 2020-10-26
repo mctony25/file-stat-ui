@@ -8,4 +8,6 @@ api_port=$(echo $API_PORT)
 echo "REACT_APP_API_HOSTNAME=$api_hostname
 REACT_APP_API_PORT=$api_port" >> /app/.env
 
-npm start
+npm run build
+
+serve -s build -l 80
